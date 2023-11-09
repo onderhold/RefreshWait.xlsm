@@ -1,6 +1,6 @@
 # RefreshWait.xlsm
 
-## VBA/Excel: Wait for Power Query when using RefreshAll
+## VBA/Excel: When using RefreshAll in VBA/Macro-Code, wait for Power Query data retrievals to complete
 
 Unfortunately, as of today, [Microsoft's documentation about Application.CalculateUntilAsyncQueriesDone](https://learn.microsoft.com/en-us/office/vba/api/excel.application.calculateuntilasyncqueriesdone) is misleading, if not to say wrong: "Runs all pending queries to OLEDB and OLAP data sources." No, it doesn't run them, but waits for any running queries to complete.
 
